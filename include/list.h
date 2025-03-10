@@ -4,17 +4,17 @@
 #include <stdlib.h>
 #include <assert.h>
 
-typedef void * t_list_data;
+typedef void *	t_list_data;
 
 typedef struct s_list_node {
-	t_list_data *data;
-	struct s_list_node *next;
-} t_list_node;
+	t_list_data			data;
+	struct s_list_node	*next;
+}	t_list_node;
 
 typedef struct s_list {
-	size_t size;
-	t_list_node *head;
-} t_list;
+	size_t		size;
+	t_list_node	*head;
+}	t_list;
 
 // list_construct.c
 t_list *list_construct();

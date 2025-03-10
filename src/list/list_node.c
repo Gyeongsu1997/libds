@@ -16,7 +16,7 @@ void list_append_node(t_list_node **head, t_list_node *new) {
 	t_list_node *last;
 	
     assert(head != NULL && new != NULL);
-	if (!(*head)) {
+	if (*head == NULL) {
 		*head = new;
 		return;
 	}
